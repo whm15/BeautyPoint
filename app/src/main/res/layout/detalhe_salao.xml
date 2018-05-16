@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/dt_img_salao"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/dt_nome_salao"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/dt_img_salao"
+        android:lines="2"
+        android:ellipsize="marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dt_end_salao"
+        android:layout_toRightOf="@id/dt_img_salao"
+        android:layout_below="@id/dt_nome_salao"
+        android:lines="3"
+        android:ellipsize="marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+    android:id="@+id/dt_desc_salao"
+    android:layout_toRightOf="@id/dt_img_salao"
+    android:layout_below="@id/dt_end_salao"
+    android:lines="3"
+    android:ellipsize="marquee"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dt_nomeFunc"
+        android:layout_toRightOf="@id/dt_img_salao"
+        android:layout_below="@id/dt_desc_salao"
+        android:lines="3"
+        android:ellipsize="marquee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_cad"
+        android:layout_below="@id/dt_nomeFunc"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Agendar Horario" />
+
+</RelativeLayout>
